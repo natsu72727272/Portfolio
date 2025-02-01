@@ -36,4 +36,6 @@ Ready to start writing?  Either start changing stuff on the left or
 [Markdown]: http://daringfireball.net/projects/markdown/
 
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CguZWeJUuKs?si=tYXkeofbMhzK38G7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+    <iframe src="https://www.youtube.com/embed/CguZWeJUuKs?si=tYXkeofbMhzK38G7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
