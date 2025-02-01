@@ -37,5 +37,11 @@ Ready to start writing?  Either start changing stuff on the left or
 
 ---
 <div class="ratio ratio-16x9">
+    <img src="./assets/dist/img/keyboard_stuvio/slide0.png">
+</div>
+
+---
+
+<div class="ratio ratio-16x9">
     <iframe src="https://www.youtube.com/embed/CguZWeJUuKs?si=tYXkeofbMhzK38G7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
