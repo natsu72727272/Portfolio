@@ -92,20 +92,20 @@
               <li class="bd-links-group py-2">
                 <ul class="list-unstyled fw-normal pb-2 small">
                   <li>
-                    <a href="./index.html" class="bd-links-link d-inline-block rounded" aria-current="page">このサイトについて</a>
+                    <a id="menu-about" href="./index.html" class="bd-links-link d-inline-block rounded" aria-current="page">このサイトについて</a>
                   </li>
                 </ul>
                 <hr>
                 <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">Works</strong>
                 <ul class="list-unstyled fw-normal pb-2 small">
                   <li>
-                    <a href="./index.html?page=portfolio_site" class="bd-links-link d-inline-block rounded" aria-current="page">ポートフォリオサイト</a>
+                    <a id="menu-portfolio_site" href="./index.html?page=portfolio_site" class="bd-links-link d-inline-block rounded" aria-current="page">ポートフォリオサイト</a>
                   </li>
                   <li>
-                    <a href="./index.html?page=keyboard_stuvio" class="bd-links-link d-inline-block rounded" aria-current="page">KeyboardStuvio</a>
+                    <a id="menu-keyboard_stuvio" href="./index.html?page=keyboard_stuvio" class="bd-links-link d-inline-block rounded" aria-current="page">KeyboardStuvio</a>
                   </li>
                   <li>
-                    <a href="./index.html?page=test" class="bd-links-link d-inline-block rounded" aria-current="page">Test</a>
+                    <a id="menu-test" href="./index.html?page=test" class="bd-links-link d-inline-block rounded" aria-current="page">Test</a>
                   </li>
                 </ul>
               </li>
@@ -125,6 +125,8 @@
     const search = location.search;
     const matches = search.match(/page=(?<page>.+)/);
     const page = matches == null ? "about" : matches.groups.page;
+
+    document.getElementById(`menu-${page}`).classList.add("active");
 
     const contentElement = document.getElementById("content");
     (async () => {
