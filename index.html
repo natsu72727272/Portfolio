@@ -130,7 +130,13 @@
         if (!response.ok) throw new Error(`status: ${response.status}`);
 
         const markdown = await response.text();
-        contentElement.innerHTML = marked.parse(markdown);
+
+        let html = marked.parse(markdown);
+        html = html
+          .replaceAll('<h1>', '<h1 class="border-bottom">')
+          .replaceAll('<h2>', '<h2 class="border-bottom">');
+
+        contentElement.innerHTML = html;
       } catch {
         contentElement.innerHTML = "このページは表示できません";
       }
