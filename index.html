@@ -133,8 +133,18 @@
         if (!response.ok) throw new Error(`status: ${response.status}`);
 
         const markdown = await response.text();
-        const html = marked.parse(markdown).replaceAll('<h1>', '<h1 class="border-bottom">');
-        contentElement.innerHTML = html;
+        const htmlString = marked.parse(markdown);
+        const domParser = new DOMParser();
+        const html = domParser.parseFromString(htmlString, "text/html");
+
+        for (const h1Element of html.getElementsByTagName("h1")) {
+          h1Element.classList.add("border-bottom");
+        }
+
+        for (const aElement of html.getElementsByTagName("a")) {
+          aElement.setAttribute("target", "_blank");
+        }
+        contentElement.innerHTML = html.documentElement.innerHTML;
       } catch {
         contentElement.innerHTML = "このページは表示できません";
       }
