@@ -1,5 +1,5 @@
-# KeyboardStuvio
-KeyboardStuvioは、キーボードの演奏をWEBカメラでトラッキングし、アバターに反映させるアプリです。
+# Keyboard Stuvio
+Keyboard Stuvioは、キーボードの演奏をWEBカメラでトラッキングし、アバターに反映させるアプリです。
 
 <div class="ratio ratio-16x9 mb-3">
     <iframe src="https://www.youtube.com/embed/CguZWeJUuKs?si=axfc4pe0Ww9_rgqH&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -14,7 +14,7 @@ KeyboardStuvioは、キーボードの演奏をWEBカメラでトラッキング
 # リリース時期
 2021年5月 ([booth](https://natsunatsu.booth.pm/items/2956377))
 
-# KeyboardStuvioの技術的な概要
+# Keyboard Stuvioの技術的な概要
 Keyboard Stuvioでは、Webカメラを含む外部とのデータ連携を実現するため、様々な技術を使っています。
 
 全て説明すると長くなるため、概要を1枚図で紹介するだけに留めておきます。  
