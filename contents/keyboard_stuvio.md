@@ -1,12 +1,11 @@
 # KeyboardStuvio
+KeyboardStuvioは、キーボードの演奏をWEBカメラでトラッキングし、アバターに反映させるアプリです。
+
 <div class="ratio ratio-16x9 mb-3">
     <iframe src="https://www.youtube.com/embed/CguZWeJUuKs?si=axfc4pe0Ww9_rgqH&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ※古い動画なのでアプリ名がVirtual Studioになっていますがご了承下さい
-
-# これは何？
-キーボードの演奏をWEBカメラでトラッキングし、アバターに反映させるアプリです。
 
 # 開発動機
 - VTuber等が気軽に演奏配信をできるようにしたかったため
