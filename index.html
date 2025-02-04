@@ -116,7 +116,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script>
     const search = location.search;
     const matches = search.match(/page=(?<page>.+)/);
@@ -142,10 +142,12 @@
         for (const aElement of html.getElementsByTagName("a")) {
           aElement.setAttribute("target", "_blank");
         }
+
         contentElement.innerHTML = html.documentElement.innerHTML;
 
         await twttr.widgets.load();
-      } catch {
+      } catch (error) {
+        console.log(error);
         contentElement.innerHTML = "このページは表示できません";
       }
     })();
