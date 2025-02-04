@@ -24,7 +24,7 @@
 - OS: Linux
 - 言語: HTML, JavaScript, CSS
 
-# 仕組み
+# 技術解説
 - GCEでLinuxマシンをホストし、その中でゲームサーバーを起動するようにしました
 - Cloud Moniringでゲームサーバーへの通信を監視し、一定時間通信がない場合、Cloud Functionsを経由してGCEをシャットダウンするようにしました
 - GASでWebページを作り、そこからGCEの起動とゲームサーバーのIPアドレス取得ができるようにしました

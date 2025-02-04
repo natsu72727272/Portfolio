@@ -12,7 +12,7 @@ VRC PerfectSyncerは、VRChatでパーフェクトシンクを実現するため
 # リリース時期
 2022年2月 ([booth](https://booth.pm/ja/items/3687658))
 
-# 技術的な説明
+# 技術解説
 VRC PerfectSyncerは、以下の2つのツールから構成されます。
 - アバターをセットアップする SetUpper
 - OSCでアバターを制御する Client
