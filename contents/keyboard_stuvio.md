@@ -40,7 +40,13 @@ Keyboard Stuvioでは、Webカメラを含む外部とのデータ連携を実�
 - 言語: JavaScript
 - ライブラリ等: MediaPipe, [face-api.js](https://github.com/justadudewhohacks/face-api.js)
 
-# 苦労した点
+# 工夫した点・苦労した点
+## 機能のモジュール化
+- 概要にもあるように、Keyboard Stuvioでは多種多様な技術を扱っています
+- そこで、Keyboard Stuvioではアプリ全体が複雑化しても問題なく開発できるように、機能をモジュール化するという工夫をしています
+  - 具体的には、背景モジュール、アバターモジュール、カメラモジュール等があります
+- これにより機能ごとにコードが独立し、メンテナンスしやすく継続的な開発が実現できています
+
 ## LandmarkDetectorのパフォーマンスの改善
 - 最初は、実装の簡単さからPythonでMediaPipeを動かしていましたが、JavaScriptで動かした方がパフォーマンスが良い事がわかったため、JavaScriptへの移行を決断しました
 - しかし、アプリの配布を考えるとJavaScriptが動作する環境ごと配布したかったため、Electronを使用してNode.js環境をパッケージングすることにしました
